@@ -39,4 +39,6 @@ cout << s.sum << " " << s.avg << endl;
  
  for( int i=0; i<10; i++)
  ofs.write( (char *)&s, sizeof(s));
+
+ return 0;
 }
