@@ -50,7 +50,7 @@ void bubbleSortbyScores(Students s[], int N)
 void makeStudents(Students s[], int N)
 {
 	ifstream ifs;
-	ifs.open("students1.txt");
+	ifs.open("class.txt");
 	if ( ifs.fail())
 	{
 		cerr << "File Open Error\n";
