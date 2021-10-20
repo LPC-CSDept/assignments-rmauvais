@@ -7,7 +7,7 @@ void fillupArray(int *arr)
 {
   for (int i =0; i<10; i ++)
   {
-    arr[i]=rand()%100; //rand() generates a random int
+    arr[i]=srand()%100; //rand() generates a random int
   }
 }
 //print array
