@@ -18,5 +18,21 @@ return 0;
 
 int main()
 {
+student* studentDynArray;
+studentDynArray = new(nothrow) student[10];
 
+ifstream fin("studentquiz2-2.txt");
+string line;
+
+int a,b;
+char ch[20];
+int i=0;
+while (getline(fin, line))
+{
+if(i>9)
+break;
+istringstream ss(line);
+ss>> studentDynArray[i].rollNo>>studentDynArray[i].name>>
+
+}
 }
