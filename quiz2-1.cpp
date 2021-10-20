@@ -5,9 +5,10 @@ using namespace std;
 //fill values
 void fillupArray(int *arr)
 {
-  for (int i =0; i<10; i ++)
+  srand(time(0));// random number generator
+   for (int i =0; i<10; i ++)
   {
-    arr[i]=srand()%100; //rand() generates a random int
+    arr[i]=rand()%100; //rand() generates a random int
   }
 }
 //print array
