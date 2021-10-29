@@ -26,3 +26,14 @@ void Numbers :: print(){
 
   cout <<endl;
 }
+
+int Numbers :: getSize(){
+  return size;
+}
+
+int Numbers :: getElement(int i){
+  if(i<0 || i>=size)
+  throw "Invalid Index";
+
+  return head[i];
+}
