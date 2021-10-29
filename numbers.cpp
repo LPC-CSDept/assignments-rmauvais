@@ -37,3 +37,28 @@ int Numbers :: getElement(int i){
 
   return head[i];
 }
+
+double Numbers :: getSum(){
+  double sum = 0;
+  for(int i =0; i<size; i++)
+  sum+= head[i];
+
+  return sum;
+}
+
+double Numbers :: getAverage(){
+  return getSum()/ size;
+}
+
+void Numbers :: bubbleSort(int type){
+  if(type ==1){
+    bool isSorted;
+    for(int i=0; i<size; i++){
+      for(int j=1; j<size - i; j++)
+      if(head[j]>head[j=1]){
+        swap(head,j,j-1);
+        isSorted = false;
+      }
+    }
+  }
+}
