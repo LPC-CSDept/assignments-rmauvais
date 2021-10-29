@@ -1,7 +1,6 @@
 #include <iostream>
 #include <stdlib.h>
 #include<time.h>
-#include "Numbers.h"
 
 using namespace std;
 
@@ -59,6 +58,37 @@ void Numbers :: bubbleSort(int type){
         swap(head,j,j-1);
         isSorted = false;
       }
+      if(isSorted)
+        return;
     }
   }
+}
+
+void Numbers :: setElement()
+{
+  srand(time(0));
+
+  for(int i=0; i<size; i++)
+    head[i]=rand();
+}
+
+void Numbers::setElement(int index, int value)
+{
+  if(index<0||index>=size)
+  cout<<"Invalid Index" <<endl;
+  head[index]=value;
+}
+
+void Numbers :: printNumbers(int desc){
+  if(desc==1){
+    bubbleSort(1);
+    print();
+  }else{
+    bubbleSort(0);
+    print();
+  }
+}
+
+void Numbers :: clear(){
+  delete[]head;
 }
