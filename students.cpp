@@ -17,4 +17,17 @@ class Student {
     void setSid(int sid){
       this ->sid = sid;
     }
-}
+    string getSname()const{
+      return sname;
+    }
+    void setSname(string sname){
+      this ->sname=sname;
+    }
+    double getScores(int i)const{
+      return scores[i];
+    }
+    void setScores(int i,int value){
+      scores[i]=value;
+    }
+
+};
