@@ -2,7 +2,7 @@
 #include "numbers.hpp"
 
 using namespace std;
-
+//find object between max and min 
 int findMax(Numbers numberset[],int n)
 {
   int id, maximum =0;
@@ -16,4 +16,5 @@ int findMax(Numbers numberset[],int n)
       id=numberset[i].getID();
     }
   }
+  return id;
 }
