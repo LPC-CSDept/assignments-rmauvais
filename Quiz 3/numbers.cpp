@@ -58,3 +58,25 @@ for(unsigned i =0; i<numbers.size();i++)
 return min;
 }
 
+//return vector values
+int Numbers::getSum()const
+{
+  int sum=0;
+  for(unsigned i=0;i<numbers.size();i++)
+  {
+    sum +=numbers[i];
+  }
+  return sum;
+}
+
+//delete the elements equal to delete
+void Numbers::deleteEle(int e)
+{
+  for(unsigned i=0;i<numbers.size();i++)
+  {
+    if(numbers[i]==e)
+    {
+      numbers.erase(numbers.begin()+i);
+    }
+  }
+}
