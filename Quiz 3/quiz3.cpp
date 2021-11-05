@@ -31,6 +31,31 @@ for(int i=0;i<numberset2.getSize();i++)
 //main
 int main()
 {
+  int Numbers;
   //array 5 elements
-  Number
+  Numbers numberset[]={Numbers(1,3), Numbers(2,5), Numbers(3,10),Numbers(4,5), Numbers(5,3)};
+
+  //print elements
+  for(int i=0;i<5;i++)
+  {
+    cout<<"numberset["<<i<<"]=";
+    for(int j=0;j<numberset[i].getSize();j++)
+    {
+      cout<<numberset[i].getElm(j)
+<<" ";    
+}
+cout<<endl;
+}
+cout<<"Result of findMax= " <<findMax(numberset,5)<<endl;
+deDup(numberset[0],numberset[1]);
+
+for (int i=0;i<5;i++)
+{
+  cout<<"numberset["<<i<<"]=";
+  for(int j=0;j<numberset[i].getSize();j++)
+  {
+    cout<<numberset[i].getElm(j)<<" ";
+  }
+  cout<<endl;
+}
 }
