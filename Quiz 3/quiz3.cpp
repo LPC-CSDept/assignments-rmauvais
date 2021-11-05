@@ -18,3 +18,19 @@ int findMax(Numbers numberset[],int n)
   }
   return id;
 }
+//delete duplicated elements
+void deDup(Numbers &numberset1, Numbers &numberset2)
+{
+for(int i=0;i<numberset2.getSize();i++)
+{
+  int ele = numberset2.getElm(i);
+  numberset1.deleteEle(ele);
+}
+}
+
+//main
+int main()
+{
+  //array 5 elements
+  Number
+}
