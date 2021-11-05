@@ -17,3 +17,11 @@ Numbers::Numbers(int id, int n)
     numbers.push_back(j);
 }
 }
+
+int Numbers::getID()const
+{
+  return ID;
+}
+
+//return vector
+int Numbers::getSize()const
