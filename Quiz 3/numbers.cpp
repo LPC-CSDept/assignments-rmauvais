@@ -46,3 +46,15 @@ int Numbers::getMax()const
   }
   return max;
 }
+
+int Numbers::getMin()const
+{
+int min = 0;
+for(unsigned i =0; i<numbers.size();i++)
+{
+  if(min>numbers[i])
+  min=numbers[i];
+}
+return min;
+}
+
