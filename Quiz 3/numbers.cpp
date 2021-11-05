@@ -25,3 +25,24 @@ int Numbers::getID()const
 
 //return vector
 int Numbers::getSize()const
+{
+  return numbers.size();
+}
+
+//return ith
+int Numbers::getElm(int i)const
+{
+  return numbers[i];
+}
+
+//return max value to vectors
+int Numbers::getMax()const
+{
+  int max = 0;
+  for(unsigned i=0; i<numbers.size();i++)
+  {
+    if(max<numbers[i])
+    max=numbers[i];
+  }
+  return max;
+}
