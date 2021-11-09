@@ -50,3 +50,21 @@ int Stack::pop(){
   }
 }
 
+// display elements if stack isn't Empty
+void Stack::display(){
+  if(currentldx>0){
+    for(int i=0; i<currentldx; ++i){
+      std::cout<<stackStore[i]<<" ";
+    }
+    std::cout<<std::endl;
+  }else{
+    std::cout<<"The stack is empty:\n";
+  }
+}
+
+//clear stack and delete it
+void Stack::clear(){
+  delete stackStore;
+  stackStore = new int[size];
+  currentldx = 0;
+}
