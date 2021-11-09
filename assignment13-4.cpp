@@ -14,3 +14,18 @@ void reverseArray(int* arr, int size){
   }
 }
 
+int main()
+{
+  Stack newStack(20);
+
+  //check if stack is empty
+  if(newStack.isEmpty()){
+    cout<<"The stack is empty!\n\n";
+  }
+  int element =5;
+  while (!newStack.isFull()){
+    newStack.push(element);
+    element +=4;
+  }
+  cout<<"Displaying the stack: ";
+}
