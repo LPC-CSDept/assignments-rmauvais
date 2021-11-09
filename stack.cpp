@@ -12,9 +12,26 @@ Stack::Stack(int size)
 //destructor for stack
 Stack::~Stack()
 {
-  delete stack store;
+  delete stackStore;
 }
 
 bool Stack::isEmpty()const{
-  
+  return currentldx == 0;
 }
+
+//checkk whether stack is full or not
+bool Stack::isFull()const{
+  return currentldx == size;
+}
+
+//returns top element if the stack isn't Empty
+int Stack::top(){
+  if(!isEmpty()){
+    return stackStore[currentldx-1];
+  }else{
+    return INT16_MIN;
+  }
+}
+
+//pushes element to stack if not full
+int Stack::top
