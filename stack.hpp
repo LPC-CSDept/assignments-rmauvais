@@ -12,5 +12,7 @@ class Stack
   void push(int val);
   int pop();
   int top();
-  
-}
+  bool isEmpty()const;
+  bool isFull()const;
+  void display();
+};
