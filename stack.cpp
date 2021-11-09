@@ -34,4 +34,19 @@ int Stack::top(){
 }
 
 //pushes element to stack if not full
-int Stack::top
+void Stack::push(int val){
+  if(!isFull()){
+    stackStore[currentldx++] =val;
+  }
+}
+
+//removes top element from stack
+int Stack::pop(){
+  if(!isEmpty()){
+    currentldx--;
+    return stackStore[currentldx];
+  }else{
+    return INT16_MIN;
+  }
+}
+
