@@ -43,5 +43,20 @@ int main()
   cout<<"Displaying the stack again: ";
   newStack.display();
 
-  int array
+  int array[20]={6,3,1,25,2,3,4,1,5,4,3,19,22,10,30,12,11,29,21,36};
+  cout<<"Initial array: ";
+  for(int i: array){
+    cout<<i<<" ";
+  }
+
+  //reverse the array
+  reverseArray(array,20);
+
+  //print the array
+  cout<<"\nReversed Array: ";
+  for(int i: array) {
+    cout<<i<<" ";
+  }
+
+  return 0;
 }
