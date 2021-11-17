@@ -65,5 +65,12 @@ class Rect{
 
 int main()
 {
-  
+  Square *s=new Square();
+  s->setWidth(10);
+  cout<<"Area of square is: "<<s->getArea()<<endl;
+  Rect *r1=new Rect();
+  r1->setheight(20);
+  *r1=r1->makeRectanglewithSquare(*s);
+  cout<<"Area of Rectangle is: "<<r1->getArea();
+  return 0;
 }
