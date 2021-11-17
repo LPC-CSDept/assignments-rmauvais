@@ -1,7 +1,7 @@
 #include <iostream>
 
 using namespace std;
-
+//make the square
 class Square
 {
   private: 
@@ -25,6 +25,7 @@ class Square
   }
   friend class Rect;
 };
+//make the rectangle
 class Rect{
   private:
   double width;
@@ -35,6 +36,7 @@ class Rect{
     width=0;
     height=0;
   }
+  //set the height and double width
   void setWidth(double width)
   {
     this->width=width;
