@@ -58,3 +58,10 @@ for (int i=1;i<size;++i)
 return (max);
 }
 
+void printNumbers(Numbers n)
+{
+  for(int i=0; i<n.size;++i)
+  {
+    cout<<n.numbers[i]<<"";
+  }
+}
