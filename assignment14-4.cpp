@@ -16,4 +16,13 @@ class Numbers
   Numbers(int s);
   Numbers(const Numbers &);
 
-}
+  ~Numbers();
+  //get max
+  int getMax()const;
+
+  friend void printNumbers(Numbers);
+
+  void inputNUmers();
+};
+
+Numbers::Numbers()
