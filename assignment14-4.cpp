@@ -22,12 +22,18 @@ class Numbers
 
   friend void printNumbers(Numbers);
 
-  void inputNUmers();
+  void inputNumbers();
 };
 
 Numbers::Numbers()
 {
-  size = s;
+  size =0;
+  numbers=nullptr;
+}
+
+Numbers::Numbers(int s)
+{
+  size =s;
   numbers = new int[s];
 }
 
