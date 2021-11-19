@@ -83,5 +83,17 @@ void Numbers::inputNumbers()
 
 int main()
 {
-  
+  Numbers n1(10);
+  n1.inputNumbers();
+  Numbers n2(n1);
+  printNumbers(n1);
+  printNumbers(n2);
+
+  int n1Max = n1.getMax();
+  int n2Max = n2.getMax();
+
+  cout<<"The max of n1: "<<n1Max<<endl;
+  cout<<"The max of n2: "<<n2Max<<endl;
+
+  return 0;
 }
