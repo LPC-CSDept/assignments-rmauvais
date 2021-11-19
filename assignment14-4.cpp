@@ -64,4 +64,24 @@ void printNumbers(Numbers n)
   {
     cout<<n.numbers[i]<<"";
   }
+  cout<<endl;
+}
+
+void Numbers::inputNumbers()
+{
+  cout<<"Enter "<<size<<" numbers: "<<endl;
+
+  int temp;
+  for(int i=0;i<size;++i)
+  {
+    cin>>temp;
+    numbers[i]=temp;
+  }
+}
+
+//main
+
+int main()
+{
+  
 }
