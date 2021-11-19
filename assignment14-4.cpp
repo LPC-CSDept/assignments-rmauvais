@@ -40,3 +40,21 @@ Numbers::Numbers(const Numbers &num)
     numbers[i]=num.numbers[i];
   }
 }
+
+Numbers::~Numbers()
+{
+  delete[]numbers;
+}
+
+int Numbers::getMax()const
+{
+int max=numbers[0];
+
+for (int i=1;i<size;++i)
+{
+  if(max<numbers[i])
+  max=numbers[i];
+}
+return (max);
+}
+
