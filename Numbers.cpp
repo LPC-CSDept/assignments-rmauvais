@@ -73,7 +73,7 @@ else {
 }
 }
 
-void print Numbers(const Numbers& n){
+void printNumbers(const Numbers& n){
   for (int i=0; i<n.size;i++){
     cout<<n.numbers[i]<<" ";
   }
