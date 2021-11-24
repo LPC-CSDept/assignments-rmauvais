@@ -10,4 +10,12 @@ public:
   Numbers(const Numbers& n);
 
   ~Numbers();
-}
+
+  int operator>(const Numbers& n);
+
+  Numbers operator=(const Numbers& n);
+
+  Numbers operator+(const Numbers& n);
+
+  friend void printNumbers(const Numbers& n);
+};
