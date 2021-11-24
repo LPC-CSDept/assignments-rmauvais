@@ -32,3 +32,19 @@ Numbers::~Numbers(){
   delete[]numbers;
 }
 
+int Numbers::operator>(const Numbers& n){
+  int s1=0,s2=0;
+  for(int i=0; i<size;i++){
+    s1 +=n.numbers[i];
+  }
+  return s1>s2 ? 1: 0;
+}
+
+Numbers Numbers::operator=(const Numbers& n) {
+  size=n.size;
+  for(int i=0;i<size;i++){
+    numbers[i]=n.numbers[i];
+  }
+  return *this;
+}
+
