@@ -48,3 +48,34 @@ Numbers Numbers::operator=(const Numbers& n) {
   return *this;
 }
 
+Numbers Numbers::operator+(const Numbers& n){
+Numbers*s=this;
+for(int i=0; i<size; i++){
+  if(i<n.size){
+    s->numbers[i]+=n.numbers[i];  
+}
+}
+if (s->size >=n.size){
+  return *s;
+}
+else {
+  Numbers* temp=s;
+  s->numbers =new int[n.size];
+  s->size=n.size;
+  int i;
+  for(i=0;i<temp->size;i++){
+    s[i]=temp->numbers[i];
+  }
+  for(int j=i; j<s->size;j++){
+    s->numbers[j]=n.numbers[j];
+  }
+  return *s;
+}
+}
+
+void print Numbers(const Numbers& n){
+  for (int i=0; i<n.size;i++){
+    cout<<n.numbers[i]<<" ";
+  }
+  cout<<endl;
+};
