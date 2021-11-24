@@ -72,7 +72,7 @@ else {
   return *s;
 }
 }
-
+//display numbers
 void printNumbers(const Numbers& n){
   for (int i=0; i<n.size;i++){
     cout<<n.numbers[i]<<" ";
