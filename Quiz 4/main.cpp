@@ -72,3 +72,28 @@ for(int i=0;i<Course::getNumCourses(); i++)
 }
 }
 }
+
+//override the input
+ifstream &operator>>(ifstream &ifs, Course &c)
+{
+  string cname;
+  int credits;
+  string semester;
+  ifs>>cname>>credits>>semester;
+
+  int numStudent;
+  ifs>>numStudent;
+
+  vector<Student> students;
+  for(int i=0; i<numStudent;i++)
+  {
+    int ID; 
+    string sname;
+    char grade;
+    double scores;
+    ifs>>ID>>sname>>grade>>scores;
+    Student s(ID, sname, grade, scores);
+    students.push_back(s);
+  }
+  c.setCourse(cname, credits, semester, students);
+}
