@@ -32,3 +32,28 @@ int Course::getCredits(void)
   return credits;
 }
 string Course::getSemester(void)
+{
+  return semester;
+}
+vector<Student>Course::getStudent(void)
+{
+  return student;
+}
+
+void Course::setCName(string cname)
+{
+  this->cname=cname;
+}
+void Course::setCredits(int credits)
+{
+  this->credits=credits;
+}
+void Course::setSemester(string semester)
+{
+  this->semester=semester;
+}
+void Course::setStudent(vector<Student>student)
+{
+  this->student=student;
+}
+
