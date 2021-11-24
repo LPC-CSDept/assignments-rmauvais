@@ -57,3 +57,22 @@ void Course::setStudent(vector<Student>student)
   this->student=student;
 }
 
+void Course::addStudent(Student &s)
+{
+  this->student.push_back(s);
+}
+void Course::setCourse(string cname, int credits, string semester, vector<Student> student)
+{
+  this->cname=cname;
+  this->credits=credits;
+  this->semester=semester;
+  this->student=student;
+}
+void Course::printCourse(void)
+{
+
+}
+int Course::getNumCourses(void)
+{
+  return NUM_COURSES;
+}
