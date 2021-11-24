@@ -1,5 +1,5 @@
 #include "course.hpp"
-#include "Student.hpp"
+#include "student.hpp"
 #include<cstring>
 #include<string>
 #include<vector>
