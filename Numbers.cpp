@@ -26,3 +26,9 @@ Numbers::Numbers(const Numbers& n){
     
   }
 }
+
+Numbers::~Numbers(){
+  size=0;
+  delete[]numbers;
+}
+
