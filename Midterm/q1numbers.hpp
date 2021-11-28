@@ -62,3 +62,10 @@ boolean operator >const Numbers &n2)
   }
 };
 
+//print all numbers
+void printNumbers(Numbers n)
+{
+  cout<<"\nNumbers are: ";
+  for(int i=0; i<n.values.size();i++)
+    cout << n.values[i]<<" ";
+}
