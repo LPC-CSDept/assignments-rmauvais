@@ -2,5 +2,7 @@ using namespace std;
 
 class Student{
   public:
-  int ID
+  int ID;
+  string name;
+  
 }
