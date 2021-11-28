@@ -30,3 +30,19 @@ class Student{
   }
 }
 
+//search ID using binary
+int binarysearch(studnet a[], int n, int ID){
+  //start pointer
+  int start=0;
+  //end pointer
+  int end = n-1;
+  //run loop
+  while(start<=end){
+    int mid = (start+end)/2;
+    // if total score is equal
+    if(a[mid].ID == ID){
+      return mid;
+    }
+    //else if total score > middle element
+  }
+}
