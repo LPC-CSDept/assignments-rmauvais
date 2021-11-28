@@ -42,4 +42,11 @@ static int getNumObjects()
 friend void printNumbers(Numbers n);
 
 boolean operator >const Numbers &n2)
+{
+  int sum1 =0, sum2=0;
+  //object n1
+  for (int i=0; i<values.size();i++)
+  //object n2
+  
+}
 }
