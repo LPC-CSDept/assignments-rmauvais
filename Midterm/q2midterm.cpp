@@ -30,6 +30,10 @@ int main()
   }
 //if i=-1 there's no ID
 if(i == -1){
-  
+  cout<<"No ID available"<<endl;
 }
+//print users info
+else{
+  cout<<"Student ID: "<<a[i].ID<<"Name: "<<a[i].name<<endl;
+  }
 }
