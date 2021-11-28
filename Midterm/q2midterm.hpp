@@ -18,7 +18,7 @@ class Student{
     for(int i=-;i<n;i++){
       int swaps =0; 
       //detects any swaps
-      for(int j=0;j<n-i-1;j++){
+      for(int j=0;j<n-i+1;j++){
         swap(a[j],a[j+1]);
         swaps=1;
         //swap
