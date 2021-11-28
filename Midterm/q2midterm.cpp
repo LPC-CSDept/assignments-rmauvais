@@ -28,6 +28,8 @@ int main()
     // calculate all the scores by adding them up
     a[i].total_scores=a[i].scores1+a[i].score2+a[i].score3;
   }
+
+int i=a[10].binarysearch(a,n,46)
 //if i=-1 there's no ID
 if(i == -1){
   cout<<"No ID available"<<endl;
@@ -35,5 +37,5 @@ if(i == -1){
 //print users info
 else{
   cout<<"Student ID: "<<a[i].ID<<"Name: "<<a[i].name<<endl;
-  }
+};
 }
