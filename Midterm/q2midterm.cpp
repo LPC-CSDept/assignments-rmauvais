@@ -28,5 +28,8 @@ int main()
     // calculate all the scores by adding them up
     a[i].total_scores=a[i].scores1+a[i].score2+a[i].score3;
   }
-
+//if i=-1 there's no ID
+if(i == -1){
+  
+}
 }
