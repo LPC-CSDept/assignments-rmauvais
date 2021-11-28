@@ -8,4 +8,25 @@ class Student{
   int Score2;
   int Score3;
   int total_scores;
+
+  void display(student a[],int n){
+    //sort total scores in descending order
+    for(int i=-;i<n;i++){
+      int swaps =0; 
+      //detects any swaps
+      for(int j=0;j<n-i-1;j++){
+        swap(a[j],a[j+1]);
+        swaps=1;
+        //swap
+      }
+    }
+    if(!swaps)
+    //no swaps, sort aray
+      break;
+  }
+  //print data
+  for(int i=0;i<n;i++){
+    cout<<"Student ID: "<<a[i].id<<" Student Name: "<<a[i].name<<" Students Total Score: "<<a[i].score1+a[i].score2+a[i].score3<<endl;
+  }
 }
+
