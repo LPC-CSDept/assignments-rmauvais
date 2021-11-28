@@ -9,7 +9,7 @@ int main()
   Numbers n1(123, 12);
   Numbers n2(456, 6);
 
-  cout<<"Obect 1: ";
+  cout<<"Object 1: ";
   printNumbers(n1);
   cout<<"\nObject 2: ";
   printNumbers(n2);
