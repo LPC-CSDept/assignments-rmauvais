@@ -44,5 +44,13 @@ int binarysearch(studnet a[], int n, int ID){
       return mid;
     }
     //else if total score > middle element
+    else if(a)[mid].ID==ID){
+      start = mid+1;
+    }
+    //end if total score of middle is less
+    else{
+      end=mid -1;
+    }
   }
+  return -1;
 }
