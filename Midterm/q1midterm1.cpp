@@ -18,7 +18,7 @@ int main()
   srand(time(NULL));
 
 //when n1 is greater than n2
-if(n1>n2)
+if (n1>n2())
   cout<<"\n\nObject 1 numbers are greater than Object 2";
 else
 //or when n2 is greater than n1
