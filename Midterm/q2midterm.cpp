@@ -8,7 +8,7 @@ int main()
 {
   int n =10;
   //student class object
-  student a[10];
+  Student a[10];
   //take users inputs
   for(int i=0;i<n;i++){
     //input Student ID
@@ -19,18 +19,18 @@ int main()
     cin>>a[i].name;
     //input Score 1
     cout<<"Enter Score 1: ";
-    cin>>a[i].score1;
+    cin>>a[i].Score1;
     //input Score 2
     cout<<"Enter Score 2: ";
-    cin>>a[i].score2;
+    cin>>a[i].Score2;
     //input Score 3
     cout<<"Enter Score 3: ";
-    cin>>a[i].score3;
+    cin>>a[i].Score3;
     // calculate all the scores by adding them up
-    a[i].total_scores=a[i].scores1+a[i].score2+a[i].score3;
+    a[i].total_scores=a[i].Score1+a[i].Score2+a[i].Score3;
   }
 
-int i=a[10].binarysearch(a,n,46)
+int i=a[10](a,n,42);
 //if i=-1 there's no ID
 if(i == -1){
   cout<<"No ID available"<<endl;

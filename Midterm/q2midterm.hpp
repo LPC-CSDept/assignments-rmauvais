@@ -2,10 +2,14 @@ using namespace std;
 //create class and variables
 class Student{
   public:
+  //intialize ID
   int ID;
   string name;
+  //intialize Score1
   int Score1;
+  //intialize Score2
   int Score2;
+  //intialize Score3
   int Score3;
   int total_scores;
 
@@ -52,5 +56,6 @@ int binarysearch(studnet a[], int n, int ID){
       end=mid -1;
     }
   }
+  //return statement
   return -1;
 }
