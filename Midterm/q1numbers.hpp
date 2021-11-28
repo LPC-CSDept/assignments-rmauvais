@@ -8,13 +8,12 @@ class Numbers
 {
   private:
   int ID;
-  vector<int>values;
-  static int numOfObjects;
+  static int numOfObjects;vector<int>values;
   public:
 Numbers()
   {
     ID=0;
-    numOfObjects++;
+    num0fObjects++;
   }
 Numbers(int i, int n)
 {
