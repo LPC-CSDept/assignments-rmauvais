@@ -21,5 +21,25 @@ int main()
 
   //use array to hold the 10 objects
   Course courses[10];
+  int n =0;
+
+  //have it read through the file
+  while (!data_file.eof()){
+    int id, credit;
+    string name;
+
+    //read the id
+    data_file >> id;
+    //read name
+    data_file >> name;
+    //read credit
+    data_file >> credit;
+
+    // create an object
+  Course c(id, name, credit);
+
+  //store the object into the array
+  courses[n++] =c;
+  }
   
 }
