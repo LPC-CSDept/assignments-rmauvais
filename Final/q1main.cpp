@@ -127,5 +127,19 @@ int recursive_binary_search(Course *courses, int l, int r, int search_id){
     //get middle element
     int mid = l+(r-l)/2;
 
+  // if course id is found, return it
+  if (courses[mid].getid()==search_id){
+    return mid;
   }
+  // if ID is >
+  if (courses[mid].getid()<search_id){
+    //search right side
+    return recursive_binary_search(courses, mid+1, r, search_id);
+  } else{
+    //if id is smaller, search left half
+    return recursive_binary_search(courses, l, mid -1, search_id);
+    }
+  }
+  // return -1 if not found
+  return -1;
 }
