@@ -118,3 +118,14 @@ int binary_search(Course *courses, int n, int search_id) {
   //return to -1 if not found
   return -1;
 }
+
+// implement binary search for recursive algorithm
+
+int recursive_binary_search(Course *courses, int l, int r, int search_id){
+  // run a loop till the array finds an element
+  while(l<=r){
+    //get middle element
+    int mid = l+(r-l)/2;
+
+  }
+}
