@@ -45,5 +45,12 @@ int main()
   data_file.close();
 
   //print courses before sorting the arrays
-  
+  cout << "Print the array before sorting:" << endl;
+  for(int i =0; i<n; i++){
+    courses[i].print();
+  }
+
+  // sort the array by ID in ascending order
+  //use quick sort function from above
+  quick_sort(courses, 0, n-1);
 }
