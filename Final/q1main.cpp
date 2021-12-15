@@ -90,4 +90,11 @@ if(x != -1){
   return 0;
 }
 
+// use function to perform the binary search using the iterative
 
+int binary_search(Course *courses, int n, int search_id) {
+  //get index of first element
+  int l=0;
+  //get index of last element
+  int r=n-1;
+}
