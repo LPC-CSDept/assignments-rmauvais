@@ -57,7 +57,36 @@ for (int p=0; p<n; p++){
     }
   }
 }
+//run loop till user exits
+while (true){
+  int id;
+
+// ask user to enter course id
+cout<< "Please enter course id to search (-1 to exit): ";
+cin>>id;
+
+// If user exits
+if (id== -1){
+  break;
 }
 
-//run loop till user exits
+//search course iterary binary search
+int x = binary_search(courses, n, id);
+// search course recursive binary search
+int y = recursive_binary_search(courses, 0, n-1, id);
+
+//If course is found
+if(x != -1){
+  cout << "Course found at index " << x << endl;
+  cout << "\nThe result from iterative binary search: ";
+  courses[x].print();
+  cout << "\nThe result from recursive binary search: ";
+  courses[y].print();
+  cout<<endl;
+} else{
+  cout << "Course with id=" << id << " was not found." <<endl;
+}
+}
+}
+
 
