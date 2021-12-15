@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 #include "q1course.hpp"
 
 using namespace std;
@@ -20,4 +21,5 @@ if (data_file.fail()){
 }
 
 // declare array of 10 objects
+
 }
