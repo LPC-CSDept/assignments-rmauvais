@@ -51,9 +51,13 @@ data_file.close();
 for (int p=0; p<n; p++){
   for (int q=0; q<n-p-1; q++){
     if (courses[q].getid()> courses[q+1].getid()){
-      
+      Course c=courses[q];
+      courses[q]= courses[q+1];
+      courses[q+1]=c;
     }
   }
 }
-
 }
+
+//run loop till user exits
+
