@@ -37,3 +37,13 @@ void Course::setid(int id){
 void Course::setName(const string &name){
   this->name = name;
 }
+
+// get course credit and set it
+void Course::setCredit(int credit){
+  this ->credit = credit;
+}
+
+//display details
+void Course::print() const{
+  cout <<"Course{id=" <<id<< ", name=" << name << ", credit=" << credit << "}" << endl;
+}
