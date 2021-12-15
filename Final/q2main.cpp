@@ -41,5 +41,9 @@ int main()
   //store the object into the array
   courses[n++] =c;
   }
+  // close the data file
+  data_file.close();
+
+  //print courses before sorting the arrays
   
 }
