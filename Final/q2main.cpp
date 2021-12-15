@@ -72,6 +72,8 @@ void quick_sort(Course *courses, int l, int h){
 
   //run loop to find if it is valid
   while(i<j){
-    
+    // get index to swap from the beginning
+    while (courses[++i].getid()< course.getid());
+    // get index to swap from end
   }
 }
