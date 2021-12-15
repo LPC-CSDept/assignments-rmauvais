@@ -1,0 +1,9 @@
+1 Pharmacy 5
+2 Physics 10
+7 Biotechnology 5
+8 Accounting 5
+9 Zoology 8
+4 History 10
+6 Mathematics 8
+5 Chemistry 5
+10 Economics 8
