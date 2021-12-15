@@ -75,5 +75,15 @@ void quick_sort(Course *courses, int l, int h){
     // get index to swap from the beginning
     while (courses[++i].getid()< course.getid());
     // get index to swap from end
+    while (courses[--j].getid()> course.getid());
+    if(i<j){
+      //swap courses
+      Course temp = courses[i];
+      courses[i]=courses[j];
+      courses[j]=temp;
+    }
   }
+  //use quick sort on leftover courses
+  quick_sort(courses, l, i);
+  quick_sort(courses, i+1, h);
 }
