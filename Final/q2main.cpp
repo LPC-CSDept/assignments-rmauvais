@@ -70,5 +70,8 @@ void quick_sort(Course *courses, int l, int h){
   int j=h+1;
   Course course = courses[(l+h)/2];
 
-  
+  //run loop to find if it is valid
+  while(i<j){
+    
+  }
 }
