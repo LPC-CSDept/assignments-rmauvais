@@ -53,4 +53,6 @@ int main()
   // sort the array by ID in ascending order
   //use quick sort function from above
   quick_sort(courses, 0, n-1);
+
+  //print the courses
 }
