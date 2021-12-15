@@ -11,7 +11,7 @@ Course::Course(){
 }
 
 // set parameter
-Course::Course(int id, string name, int credit) : id(id), name(name), credit(credit ){}
+Course::Course(int id, string name, int credit) : id(id), name(name), credit(credit){}
 
 //get ID and return
 int Course::getid() const {
@@ -19,12 +19,12 @@ int Course::getid() const {
 }
 
 // get course name and return it
-const string &Course::getName()const{
+const string &Course::getName() const {
   return name;
 }
 
 // get credit and return
-int Course::getCredit()const{
+int Course::getCredit() const {
   return credit;
 }
 
