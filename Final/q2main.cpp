@@ -55,4 +55,10 @@ int main()
   quick_sort(courses, 0, n-1);
 
   //print the courses
+  cout << "\nPrint array after the quick sort:" << endl;
+  for(int i=0; i<n; i++){
+    courses[i].print();
+  }
+  return 0;
 }
+
