@@ -87,6 +87,7 @@ if(x != -1){
   cout << "Course with id=" << id << " was not found." <<endl;
 }
 }
+  return 0;
 }
 
 
