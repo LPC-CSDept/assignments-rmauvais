@@ -63,3 +63,12 @@ int main()
 }
 
 //sort array with recursive
+void quick_sort(Course *courses, int l, int h){
+  if (l>=h)return;
+
+  int i=l-1;
+  int j=h+1;
+  Course course = courses[(l+h)/2];
+
+  
+}
