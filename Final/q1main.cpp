@@ -97,4 +97,24 @@ int binary_search(Course *courses, int n, int search_id) {
   int l=0;
   //get index of last element
   int r=n-1;
+
+  //run loop till array is found
+  while (l<=r){
+    // get middle element
+    int mid = l+(r-l)/2;
+
+    // if specified id is found, return it
+    if (courses[mid].getid()== search_id){
+      return mid;
+    }
+    // if id is great then, search right side
+    if (courses[mid].getid()<search_id){
+      l=mid+1;
+    } else {
+      //if search is smaller, search left side
+      r=mid-1;
+    }
+  }
+  //return to -1 if not found
+  return -1;
 }
