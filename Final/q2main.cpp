@@ -4,3 +4,5 @@
 
 using namespace std;
 
+//sort function
+void quick_sort(Course *, int, int);
