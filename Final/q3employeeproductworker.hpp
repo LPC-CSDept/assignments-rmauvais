@@ -34,3 +34,17 @@ class Employee
     return hire_date;
   }
 };
+
+class ProductionWorker: public Employee{
+  private: 
+  //data for the production workers
+    int shift;
+    double pay;
+  public:
+    ProductionWorker():Employee(){
+      shift =0;
+      pay =0;
+    }
+    //set a parameter to pass the name, id and date through the class's constructor
+    
+}
