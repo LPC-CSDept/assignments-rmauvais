@@ -57,6 +57,14 @@ class ProductionWorker: public Employee
   {
     //set parameter for constructor
     setEmployee_name(employee_name);
-    setNUmber
+    setNumber(number);
+    setHire_date(hire_date);
+    this->shift=shift;
+    this->hourly_pay_rate=hourly_pay_rate;
   }
+  int getShift()
+  {
+    return shift;
+  }
+  double getHourly_pay_rate()
 }
