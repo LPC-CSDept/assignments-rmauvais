@@ -15,5 +15,13 @@ string hire_date;
 int shift;
 double hourly_pay_rate;
 
-
+//open the text file
+ifstream fin;
+fin.open("q3data.txt");
+//call a constructor for the records
+cout<<"Input File\n";
+for(int i=0;i<10;++i)
+{
+  
+}
 }
