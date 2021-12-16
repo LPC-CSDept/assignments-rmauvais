@@ -38,5 +38,13 @@ for(int i=0;i<10;++i)
   if(p[i]>p[max_index])
   max_index =i;
 }
-
+cout<<"The employee with the highest hourly pay rate\n";
+cout<<"Name: "<<p[max_index].getEmployee_name()<<endl;
+cout<<"Number: "<<p[max_index].getNumber()<<endl;
+cout<<"Hire Date: "<<p[max_index].getHire_date()<<endl;
+cout<<"Shift: "<<p[max_index].getShift()<<endl;
+cout<<"Hourly Pay Rate: "<<p[max_index].getHourly_pay_rate()<<endl;
+//close the index
+fin.close();
+return 0;
 }
