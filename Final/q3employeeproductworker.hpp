@@ -67,4 +67,24 @@ class ProductionWorker: public Employee
     return shift;
   }
   double getHourly_pay_rate()
+  {
+    return hourly_pay_rate;
+  }
+  void setShift(int shift)
+  {
+    this->shift=shift;
+  }
+  void setHourly_pay_rate(double hourly_pay_rate)
+  {
+    this->hourly_pay_rate=hourly_pay_rate;
+  }
+  friend bool operator >(ProductionWorker &, Production Worker &);
+};
+ //overload operator use boolean operator to return boolean value
+bool operator >(ProductionWorker &p1, ProductionWorker &p2)
+{
+  if(p1.getHourly_pay_rate()>p2.getHourly_pay_rate())
+  return 1; //if found true
+else
+  return 0; //if found false
 }
