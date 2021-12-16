@@ -46,5 +46,23 @@ class ProductionWorker: public Employee{
       pay =0;
     }
     //set a parameter to pass the name, id and date through the class's constructor
-    
+    ProductionWorker(string name, string id, string date, int shift_no, double pay_rate):Employee(name, id, date){
+      shift = shift_no;
+      pay=pay_rate;
+    }
+    //print details of worker
+    void print_details(){
+      cout << get_employee_name() << "\t" << get_employee_number() << "\t\t";
+      cout << get_hire_date() << "\t" << shift << "\t" << pay << endl;
+    }
+    //return the monthly pay pay_rate
+    double get_pay(){
+      return pay;
+    }
+    //if overloaded is > operator then it'll compare the pay and return a boolean value
+    bool operator > (ProductionWorker worker){
+      if(pay > worker.get_pay())
+      return true;
+    return false;
+    }
 }
