@@ -43,3 +43,20 @@ class Employee
     this->hire_date = hire_date;
   }
 };
+
+class ProductionWorker: public Employee
+{
+  int shift;
+  double hourly_pay_rate;
+
+  public:
+  ProductWorker()
+  { //default constructor
+  }
+  ProductionWorker(string employee_name, int number, string hire_date, int shift, double hourly_pay_rate)
+  {
+    //set parameter for constructor
+    setEmployee_name(employee_name);
+    setNUmber
+  }
+}
